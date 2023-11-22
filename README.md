@@ -1,2 +1,0 @@
-# LogiLibras
- Projeto de TCC
