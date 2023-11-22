@@ -1,0 +1,164 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-color: #5271FF;
+}
+
+main {
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+main .logo-container, .personalizacao-container {
+    min-height: 550px;
+    width: 600px;
+}
+
+main .logo-container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main .logo-container .logo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 55px;
+    justify-content: center;
+}
+
+main .logo-container .logo h2:last-child {
+    align-self: flex-end;
+}
+
+@media (max-width: 485px){
+    main .logo-container .logo h2{
+        align-self: center !important;
+    }
+}
+
+/* AVATAR */
+
+main .personalizacao-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .personalizacao-container .box-btn {
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#line {
+    height: 70%;
+    width: 2px;
+    border-radius: 3px;
+    background-color: gray;
+    margin: 0 12px;
+}
+
+main .personalizacao-container .box-btn .botao{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    background-color: #FFD452;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+main .personalizacao-container .box-btn .botao:hover {
+    transform: scale(1.05);
+}
+main .personalizacao-container .personalizacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .personalizacao-container .personalizacao .avatar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main .personalizacao-container .personalizacao .avatar .container-img .imagem{
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+main .personalizacao-container .personalizacao .avatar .container-img img {
+    width: 50px;
+    margin: 10px;
+}
+
+main .personalizacao-container .personalizacao .nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+main .personalizacao-container .personalizacao .nome .input-nome{
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+main .personalizacao-container .personalizacao .nome button{
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #FFD452;
+}
+
+main .personalizacao-container .personalizacao .foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#anexar-foto{
+    width: 80%;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* PARA SER ADD NO JS */
+
+.imagem-selecionada{
+    border: #FFD452 solid 3px !important;
+}
+
+.esconder-painel {
+    display: none !important;
+}

@@ -1,0 +1,112 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-color: #5271FF;
+}
+
+main {
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+main .logo-container, .login-container {
+    height: 550px;
+    width: 600px;
+}
+
+main .logo-container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main .logo-container .logo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 55px;
+    justify-content: center;
+}
+
+main .logo-container .logo h2:last-child {
+    align-self: flex-end;
+}
+
+@media (max-width: 485px){
+    main .logo-container .logo h2{
+        align-self: center !important;
+    }
+}
+
+main .login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main .login-container form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .login-container form h1{
+    font-size: 50px;
+}
+
+main .login-container form .campo {
+    border: dotted;
+    border-radius: 10px;
+    width: 60%;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+@media(max-width:450px){
+    main .login-container form .campo {
+        width: 250px;
+    }
+}
+
+main .login-container form .campo:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+main .login-container form .botao {
+    border: none !important;
+    color: #fff;
+    background-color: #5271FF;
+    cursor: pointer;
+    transition: 0.3s ease-in-out; 
+}
+
+main .login-container form .botao:hover{
+    transform: scale(1.05);
+}
+
+main .login-container form .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .login-container form .check input {
+    margin-right: 5px;
+    cursor: pointer;
+}

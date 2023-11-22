@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/personalizacao.css">
+
+</head>
+<body>
+    <main>
+        <section class="logo-container" >
+            <div class="logo">
+                <h2>Logi</h2>
+                <h2>Libras</h2>
+            </div>
+
+            <div class="info">
+                <p>Tradução com VLIBRAS fixado</p>
+            </div>
+        </section>
+
+        <section class="personalizacao-container" >
+            <h2>Personalização</h2>
+            <p>Escolha uma forma personalizar seu perfil</p>
+            <div class="box-btn">
+                <button class="botao btn-avatar" >Avatar</button>
+                <div id="line"></div>
+                <button class="botao btn-foto" >Foto</button>
+            </div>
+
+            <div class="personalizacao">
+                <h3>Selecione um avatar</h3>
+                <form class="avatar carrossel">
+                    <input type="hidden" name="imagem">
+                    <div class="container-img">
+                        <button class="imagem imagem-selecionada" name="avatar01.svg"><img src="./src/media/img/avatar01.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar02.svg"><img src="./src/media/img/avatar02.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar03.svg"><img src="./src/media/img/avatar03.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar04.svg"><img src="./src/media/img/avatar04.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar05.svg"><img src="./src/media/img/avatar05.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar06.svg"><img src="./src/media/img/avatar06.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar07.svg"><img src="./src/media/img/avatar07.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar08.svg"><img src="./src/media/img/avatar08.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar09.svg"><img src="./src/media/img/avatar09.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar10.svg"><img src="./src/media/img/avatar10.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar11.svg"><img src="./src/media/img/avatar11.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar12.svg"><img src="./src/media/img/avatar12.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar13.svg"><img src="./src/media/img/avatar13.svg" alt="avatar"></button>
+                        <button class="imagem" name="avatar14.png"><img src="./src/media/img/avatar14.png" alt="avatar"></button>
+                    </div>
+
+                    <div class="nome">
+                        <input type="text" name="nome" placeholder="Digite seu nome:" class="input-nome">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+                <form class="foto carrossel esconder-painel">
+                    <div class="anexar-foto" id="anexar-foto">
+                        
+                    </div>
+                    <div class="nome">
+                        <input type="text" name="nome" placeholder="Digite seu nome:" class="input-nome">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+        <!-- VLIBRAS -->
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <script src="./src/js/personalizacao.js"></script>
+</body>
+</html>
