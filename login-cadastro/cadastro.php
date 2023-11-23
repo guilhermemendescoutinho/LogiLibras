@@ -1,8 +1,6 @@
 <?php
     include "conexao.php";
 
-
-
     if(! isset($_POST['enviar'])){
         // Caso aconteça o erro...
         exit;
@@ -12,13 +10,14 @@
     
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    //$senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    $senha = $_POST['senha'];
     $userData = "INSERT INTO user values (?, ?, ?)";
 
-    if(!password_verify($_POST['confirmar'], $senha)) {
-        echo "Erro. Senhas não conferem.";
-        exit;
-    }
+    //  if(!password_verify($_POST['confirmar'], $senha)) {
+    //      echo "Erro. Senhas não conferem.";
+    //      exit;
+    // }
 
     $stmt = $mysqli->prepare($userData);
 

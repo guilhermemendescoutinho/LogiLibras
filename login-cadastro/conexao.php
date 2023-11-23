@@ -6,8 +6,5 @@
     if (mysqli_connect_errno()){
         echo "não conectou".$mysqli->error;
         exit(0);
-    }else{
-        echo "conectou";
-        
     }
 ?>
