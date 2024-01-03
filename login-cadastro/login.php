@@ -21,8 +21,8 @@ if ($resultado->num_rows > 0) {
                 $encontrado = true;
 
                 if ($senhaLogin == $linha['senha']) {
-                    //echo "senha correta";
-                    header("location: ..");
+                    echo "senha correta";
+                    //header("location: ..");
                 
                 } else {
                     echo "senha incorreta";
